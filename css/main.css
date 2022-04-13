@@ -66,8 +66,8 @@ header ul a {
   display: -ms-grid;
   display: grid;
   text-align: left;
-  padding: 2em;
-  font-size: 1em;
+  padding: 1em;
+  font-size: .75em;
 }
 
 .meet {
