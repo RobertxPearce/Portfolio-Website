@@ -298,3 +298,18 @@ section {
         padding: 6em 20em 6em 20em;
     }
 }
+
+// For Animation
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(1px, 1px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(1px, 49px);
+    }
+}
