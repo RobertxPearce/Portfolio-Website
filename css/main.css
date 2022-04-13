@@ -65,8 +65,9 @@ header ul a {
   color: white;
   display: -ms-grid;
   display: grid;
-  text-align: center;
+  text-align: left;
   padding: 4em;
+  font-size: medium;
 }
 
 .meet {
@@ -74,7 +75,7 @@ header ul a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 500px;
+  width: 400px;
   font-weight: bold;
   font-size: x-large;
   color: #0C4C98;
