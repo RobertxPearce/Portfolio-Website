@@ -32,12 +32,12 @@
 
 <div class="hero">
     <div class="content">
-        <h1>Software Engineer At Your Fingertips</h1>
-        <div class="meet">
+        <h1 class="stagger1">Software Engineer At Your Fingertips</h1>
+        <div class="meet stagger1">
             <span>👇</span>
             <p>Meet Robert Pearce</p>
         </div>
-        <svg width="90" height="145" viewBox="0 0 90 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="scroll stagger1" width="90" height="145" viewBox="0 0 90 145" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group 6">
             <g id="Rectangle 3">
             <mask id="path-1-inside-1_42_2" fill="white">
@@ -134,6 +134,60 @@
         </div>
 
     </section>
+
+    <!-- For Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content',{
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut,duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition2", {
+            ScrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+        gsap.from(".transition3", {
+            ScrollTrigger: {
+                trigger: '.transition3',
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        })
+    </script>
 
 </body>
 </html>
