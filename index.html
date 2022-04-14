@@ -63,14 +63,14 @@
 
     <section class="featured">
         <div class="left">
-            <div class="inner transition2">
+            <div class="inner transition1">
                 <p class="subtitle">Featured Project</p>
                 <a href="#" class="featured-title">1UP Macro Pad</a>
 
                 <p class="featured desc">Custom macro pad kit.</p>
             </div>
         </div>
-        <img class="right transition2" src="Images/Macro Pad.png" alt="Featured Project">
+        <img class="right transition1" src="Images/Macro Pad.png" alt="Featured Project">
     </section>
     <section class="skills">
         <div class="skills-container">
@@ -167,9 +167,9 @@
             ease: Back.easeOut.config(1.7)
         })
 
-        gsap.from(".transition2", {
-            ScrollTrigger: {
-                trigger: '.transition2',
+        gsap.from(".transition1", {
+            scrollTrigger: {
+                trigger: '.transition1',
                 start: "top bottom"
             },
             y: 50,
@@ -177,10 +177,20 @@
             duration: 1.2,
             stagger: .3
         })
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
         gsap.from(".transition3", {
-            ScrollTrigger: {
+            scrollTrigger: {
                 trigger: '.transition3',
-                start: "top bottom"
+                start: "top center"
             },
             y: 50,
             opacity: 0,
