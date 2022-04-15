@@ -92,13 +92,13 @@ section {
     font-weight: bold;
     color: #2e5266ff;
     letter-spacing: .2em;
-    font-size: .85em;
+    font-size: 1em;
 }
 
 .featured-title {
     color: #6e8898ff;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: -.4em;
     display: block;
 }
@@ -108,7 +108,7 @@ section {
     margin-bottom: 3em;
     font-size: .85em;
     line-height: 1.8em;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .skills {
@@ -117,7 +117,7 @@ section {
 
 .skills-container ul li {
 
-    background: #9fb1bcff;
+    background: #2e5266ff;
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -141,9 +141,11 @@ section {
 
     .skills-title {
         font-weight: bold;
+        color: #d3d0cbff;
     }
     .featured-desc {
         margin-bottom: 2em;
+        color: #9fb1bcff;
     }
 }
 
