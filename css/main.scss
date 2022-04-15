@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+// Color Variables
+$saphire: #2E5266FF;
+$lightslategray: #6E8898FF;
+$cadetgray: #9FB1BCFF;
+$americansilver: #D3D0CBFF;
+$white: #F7F7F7;
 
 body {
     height: 100vh;
@@ -17,10 +23,10 @@ a {
 img {width: 100%;}
 
 .nav-container {
-    background: #2e5266ff;
+    background: $saphire;
 
     a {
-        color: #9fb1bcff;
+        color: $cadetgray;
         font-size: larger;
     }
 }
@@ -31,7 +37,7 @@ header {
     padding: 2em;
 
     .logo {
-        color: #d3d0cbff;
+        color: $americansilver;
         font-weight: bold;
         font-size: larger;
     }
@@ -51,8 +57,8 @@ header {
 }
 
 .hero {
-    background: #6e8898ff;
-    color: #d3d0cbff;
+    background: $lightslategray;
+    color: $americansilver;
     display: grid;
     text-align: left;
     padding: 1em;
@@ -65,7 +71,7 @@ header {
     width: 380px;
     font-weight: bold;
     font-size: large;
-    color: #2e5266ff;
+    color: $saphire;
 
     span {
         margin-top: 1em;
@@ -90,13 +96,13 @@ section {
 .subtitle {
     text-transform: uppercase;
     font-weight: bold;
-    color: #2e5266ff;
+    color: $saphire;
     letter-spacing: .2em;
     font-size: 1em;
 }
 
 .featured-title {
-    color: #6e8898ff;
+    color: $lightslategray;
     font-weight: bold;
     font-size: 1.5em;
     margin-top: -.4em;
@@ -104,7 +110,7 @@ section {
 }
 
 .featured-desc {
-    color: #2e5266ff;
+    color: $saphire;
     margin-bottom: 3em;
     font-size: .85em;
     line-height: 1.8em;
@@ -112,12 +118,12 @@ section {
 }
 
 .skills {
-    background: #d3d0cbff;
+    background: $americansilver;
 }
 
 .skills-container ul li {
 
-    background: #2e5266ff;
+    background: $saphire;
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -141,16 +147,16 @@ section {
 
     .skills-title {
         font-weight: bold;
-        color: #d3d0cbff;
+        color: $americansilver;
     }
     .featured-desc {
         margin-bottom: 2em;
-        color: #9fb1bcff;
+        color: $cadetgray;
     }
 }
 
 .portfolio {
-    background: #F7F7F7;
+    background: $white;
     text-align: center;
 }
 
@@ -218,7 +224,7 @@ section {
         background: unset;
 
         header {
-            background: #2e5266ff;
+            background: $saphire;
         }
     }
     header {
@@ -252,7 +258,7 @@ section {
         padding: 0;
 
         .content {
-            background: #6e8898ff;
+            background: $lightslategray;
             padding: 6em 8em 6em 4em;
             text-align: left;
 
