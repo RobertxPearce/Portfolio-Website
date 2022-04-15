@@ -62,7 +62,7 @@ header {
 .meet {
     display: flex;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     font-weight: bold;
     font-size: large;
     color: #2e5266ff;
@@ -160,7 +160,10 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-    
+    // overflow-x hidden to try and fix mobile
+    body {
+        overflow-x: hidden;
+    }
     .featured, .portfolio {
         text-align: left;
     }
@@ -201,6 +204,10 @@ section {
 }
 
 @media only screen and (min-width: 1050px) {
+    // overflow-x hidden to try and fix mobile
+    body {
+        overflow-x: hidden;
+    }
     .hero {
         height: 90vh;
     }
