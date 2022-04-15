@@ -17,10 +17,10 @@ a {
 img {width: 100%;}
 
 .nav-container {
-    background: #8AACBF;
+    background: #2e5266ff;
 
     a {
-        color: white;
+        color: #9fb1bcff;
         font-size: larger;
     }
 }
@@ -31,7 +31,7 @@ header {
     padding: 2em;
 
     .logo {
-        color: #0C4C98;
+        color: #d3d0cbff;
         font-weight: bold;
         font-size: larger;
     }
@@ -51,8 +51,8 @@ header {
 }
 
 .hero {
-    background: #9CC5DD;
-    color: white;
+    background: #6e8898ff;
+    color: #d3d0cbff;
     display: grid;
     text-align: left;
     padding: 1em;
@@ -65,7 +65,7 @@ header {
     width: 500px;
     font-weight: bold;
     font-size: medium;
-    color: #0C4C98;
+    color: #2e5266ff;
 
     span {
         margin-top: 1em;
@@ -90,13 +90,13 @@ section {
 .subtitle {
     text-transform: uppercase;
     font-weight: bold;
-    color: #0C4C98;
+    color: #2e5266ff;
     letter-spacing: .2em;
     font-size: .85em;
 }
 
 .featured-title {
-    color: black;
+    color: #6e8898ff;
     font-weight: bold;
     font-size: 1.3em;
     margin-top: -.4em;
@@ -104,7 +104,7 @@ section {
 }
 
 .featured-desc {
-    color: #3B3B3B;
+    color: #2e5266ff;
     margin-bottom: 3em;
     font-size: .85em;
     line-height: 1.8em;
@@ -112,12 +112,12 @@ section {
 }
 
 .skills {
-    background: #0C4C98;
+    background: #d3d0cbff;
 }
 
 .skills-container ul li {
 
-    background: white;
+    background: #9fb1bcff;
     padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
@@ -209,7 +209,7 @@ section {
         background: unset;
 
         header {
-            background: #8AACBF;
+            background: #2e5266ff;
         }
     }
     header {
@@ -243,7 +243,7 @@ section {
         padding: 0;
 
         .content {
-            background: #9CC5DD;
+            background: #6e8898ff;
             padding: 6em 8em 6em 4em;
             text-align: left;
 
