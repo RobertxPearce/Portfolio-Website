@@ -75,7 +75,7 @@ header ul a {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 380px;
+  width: auto;
   font-weight: bold;
   font-size: large;
   color: #2E5266FF;
