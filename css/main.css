@@ -172,7 +172,7 @@ section {
 
 .portfolio-container a img {
   border-radius: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 @media only screen and (min-width: 800px) {
