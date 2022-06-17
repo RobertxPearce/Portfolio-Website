@@ -3,7 +3,7 @@ body {
   height: 100vh;
   -webkit-margin-before: 0;
           margin-block-start: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 ul {
@@ -21,36 +21,26 @@ img {
 }
 
 .nav-container {
-  background: #2E5266FF;
+  background: #2e5266;
 }
-
 .nav-container a {
-  color: #9FB1BCFF;
+  color: #9fb1bc;
   font-size: larger;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 2em;
 }
-
 header .logo {
-  color: #D3D0CBFF;
+  color: #d3d0cb;
   font-weight: bold;
   font-size: larger;
 }
-
 header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header ul a {
   display: block;
   padding: 0 1em;
@@ -61,29 +51,25 @@ header ul a {
 }
 
 .hero {
-  background: #6E8898FF;
-  color: #D3D0CBFF;
-  display: -ms-grid;
+  background: #6e8898;
+  color: #d3d0cb;
   display: grid;
   text-align: left;
   padding: 1em;
-  font-size: .65em;
+  font-size: 0.65em;
 }
 
 .meet {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: auto;
   font-weight: bold;
   font-size: large;
-  color: #2E5266FF;
+  color: #2e5266;
 }
-
 .meet span {
   margin-top: 1em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .scroll {
@@ -103,66 +89,59 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #2E5266FF;
-  letter-spacing: .2em;
+  color: #2e5266;
+  letter-spacing: 0.2em;
   font-size: 1em;
 }
 
 .featured-title {
-  color: #6E8898FF;
+  color: #6e8898;
   font-weight: bold;
   font-size: 1.5em;
-  margin-top: -.4em;
+  margin-top: -0.4em;
   display: block;
 }
 
 .featured-desc {
-  color: #2E5266FF;
+  color: #2e5266;
   margin-bottom: 3em;
-  font-size: .85em;
+  font-size: 0.85em;
   line-height: 1.8em;
   font-weight: 550;
 }
 
 .skills {
-  background: #D3D0CBFF;
+  background: #d3d0cb;
 }
 
 .skills-container ul li {
-  background: #2E5266FF;
+  background: #2e5266;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
-
 .skills-container ul li .icon-container {
   height: 100px;
-  display: -ms-grid;
   display: grid;
   place-content: center;
   margin: 0 auto;
 }
-
 .skills-container ul li .icon-container.one {
   width: 80px;
 }
-
 .skills-container ul li .icon-container.two {
   width: 80px;
 }
-
 .skills-container ul li .icon-container.three {
   width: 80px;
 }
-
 .skills-container ul li .skills-title {
   font-weight: bold;
-  color: #D3D0CBFF;
+  color: #d3d0cb;
 }
-
 .skills-container ul li .featured-desc {
   margin-bottom: 2em;
-  color: #9FB1BCFF;
+  color: #9fb1bc;
 }
 
 .portfolio {
@@ -180,96 +159,97 @@ section {
   body {
     overflow-x: hidden;
   }
+
   .featured, .portfolio {
     text-align: left;
   }
+
   .featured, .portfolio-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% auto;
-        grid-template-columns: 40% auto;
+    grid-template-columns: 40% auto;
   }
+
   .left, .portfolio-left {
-    display: -ms-grid;
     display: grid;
     place-content: center;
   }
+
   .right {
     margin-left: 2em;
     margin-top: 1em;
   }
+
   .skills {
     margin-top: 0em;
     margin-bottom: 0em;
     padding-top: 7em;
   }
+
   .skills-container ul {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
+
   .portfolio {
     padding-top: 7em;
   }
+
   .portfolio-container img {
     margin-left: 2em;
   }
 }
-
 @media only screen and (min-width: 1050px) {
   body {
     overflow-x: hidden;
   }
+
   .hero {
     height: 90vh;
   }
+
   .nav-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: unset;
   }
   .nav-container header {
-    background: #2E5266FF;
+    background: #2e5266;
   }
+
   header {
     padding: 2em 2em 2em 4em;
   }
+
   .social-header {
     padding: 2em 4em 2em 0;
   }
+
   section {
     padding: 4em;
   }
+
   .social-header {
     display: block;
   }
   .social-header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     width: 9em;
     float: right;
   }
   .social-header ul img {
     width: 30px;
   }
+
   .hero {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
   }
   .hero .content {
-    background: #6E8898FF;
+    background: #6e8898;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -277,76 +257,77 @@ section {
     font-size: 4em;
     line-height: 1.2em;
   }
+
   .meet {
     margin: unset;
   }
+
   .hero-design {
     display: unset;
     margin-left: -50%;
     margin-top: 15%;
     width: 100%;
   }
+
   .portfolio img {
     float: right;
     max-width: 500px;
   }
 }
-
 @media only screen and (min-width: 1250px) {
   header {
     padding: 2em 2em 2em 10em;
   }
+
   .social-header {
     padding: 2em 10em 2em 0;
   }
+
   section {
     padding: 10em 10em 4em 10em;
   }
+
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
 }
-
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 2em 2em 10em;
   }
+
   .social-header {
     padding: 2em 20em 2em 0;
   }
+
   section {
     padding: 10em 20em 4em 20em;
   }
+
   .hero .content {
     padding: 6em 20em 6em 20em;
   }
 }
-
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
 
 @-webkit-keyframes circleAnim {
   from {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
     z-index: 5;
   }
   to {
-    -webkit-transform: translate(1px, 49px);
-            transform: translate(1px, 49px);
+    transform: translate(1px, 49px);
   }
 }
 
 @keyframes circleAnim {
   from {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
     z-index: 5;
   }
   to {
-    -webkit-transform: translate(1px, 49px);
-            transform: translate(1px, 49px);
+    transform: translate(1px, 49px);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
