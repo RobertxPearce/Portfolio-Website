@@ -6,6 +6,12 @@ $cadetgray: #9FB1BCFF;
 $americansilver: #D3D0CBFF;
 $white: #F7F7F7;
 
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     margin-block-start: 0;
