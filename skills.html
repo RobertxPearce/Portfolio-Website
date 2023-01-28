@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html">Credentials</a></li>
                     <li><a href="hireme.html">Hire Me</a></li>
                 </ul>
             </nav>
@@ -58,5 +58,103 @@
         <path class="square-anim" d="M0 283C0 269.193 11.1929 258 25 258H104C117.807 258 129 269.193 129 283V362C129 375.807 117.807 387 104 387H25C11.1929 387 0 375.807 0 362V283Z" fill="#2E5266"/>
         </svg>
     </div>
+
+    <section class="portfolio">
+
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Associate Degree</p>
+                    <p class="featured-title">Accounting and Business Management</p>
+                    <p class="featured-desc">Graduated from College of Southern Nevada with an Associate Degree in Accounting and Business Management. I maintained a 3.8 GPA and received the Deans List Award every semester. </p>
+                </div>
+            </div>
+            <a href="To-Do-List/To-Do-List.html"><img src="Images/To-Do-List.png" target="blank" rel="norefferrer noopener" alt="To-Do List"></a>
+        </div>
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Certificate</p>
+                    <p class="featured-title">Learn How to Code Course</p>
+                    <p class="featured-desc">Completed the Codecademy Learn How to Code Course and learned the fundementals of programming.</p>
+                </div>
+            </div>
+            <a href=""><img src="Images/Learn-to-Code-Certificate.png" alt="Learn How to Code Certificate"></a>
+        </div>
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Certificate</p>
+                    <p class="featured-title">Code Foundation Course</p>
+                    <p class="featured-desc">Completed the Codecademy Code Foundation Course and was introduced to the world of computer science.</p>
+                </div>
+            </div>
+            <a href=""><img src="Images/Code-Foundation-Skill-Path-Certificate.png" target="blank" rel="norefferrer noopener" alt="Code Foundation Skill Path Certificate"></a>
+        </div>
+
+        <!-- For Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content',{
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+        tl.from('.hero-design', {
+            opacity: 0, y: 50, ease: Power4.easeOut,duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition1", {
+            scrollTrigger: {
+                trigger: '.transition1',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        })
+    </script>
+    </section>
 </body>
 </html>
