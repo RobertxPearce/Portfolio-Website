@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Skills</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-        <div class="nav-container">
+    <div class="nav-container">
         <header>
             <a href="index.html" class="logo">Robert Pearce</a>
 
@@ -58,103 +58,5 @@
         <path class="square-anim" d="M0 283C0 269.193 11.1929 258 25 258H104C117.807 258 129 269.193 129 283V362C129 375.807 117.807 387 104 387H25C11.1929 387 0 375.807 0 362V283Z" fill="#2E5266"/>
         </svg>
     </div>
-
-    <section class="portfolio">
-
-        <div class="portfolio-container transition3">
-            <div class="portfolio-left">
-                <div class="inner">
-                    <p class="subtitle">Featured Project</p>
-                    <p class="featured-title">To-Do List</p>
-                    <p class="featured-desc">To-Do List App to track all of the tasks at hand. Coded using HTML, CSS, and JavaScript.</p>
-                </div>
-            </div>
-            <a href="To-Do-List/To-Do-List.html"><img src="Images/To-Do-List.png" target="blank" rel="norefferrer noopener" alt="To-Do List"></a>
-        </div>
-        <div class="portfolio-container transition3">
-            <div class="portfolio-left">
-                <div class="inner">
-                    <p class="subtitle">Featured Project</p>
-                    <p class="featured-title">Calculator</p>
-                    <p class="featured-desc">Calculator that can compute all your mathmatical dreams. Coded using HTML, CSS, and JavaScript.</p>
-                </div>
-            </div>
-            <a href="Calculator/index.html"><img src="Images/Calculator.jpg" target="blank" rel="norefferrer noopener" alt="Calculator Project"></a>
-        </div>
-        <div class="portfolio-container transition3">
-            <div class="portfolio-left">
-                <div class="inner">
-                    <p class="subtitle">Featured Project</p>
-                    <p class="featured-title">1UP Macro Pad</p>
-                    <p class="featured-desc">Macro pad kit including PCB, Elite-C V4 Controller, 16x Diodes, 1x Reset Switch.</p>
-                </div>
-            </div>
-            <a href="#"><img src="Images/Macro Pad.png" alt="1UP Macro Pad"></a>
-        </div>
-
-        <!-- For Animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-        var tl = gsap.timeline();
-
-        tl.from('.content',{
-            y: '-30%',
-            opacity: 0,
-            duration: 2,
-            ease: Power4.easeOut
-        })
-        tl.from('.stagger1', {
-            opacity: 0,
-            y: -50,
-            stagger: .3,
-            ease: Power4.easeOut,
-            duration: 2
-        }, "-=1.5")
-        tl.from('.hero-design', {
-            opacity: 0, y: 50, ease: Power4.easeOut,duration: 1
-        }, "-=2")
-
-        gsap.from(".square-anim", {
-            stagger: .2,
-            scale: 0.1,
-            duration: 1,
-            ease: Back.easeOut.config(1.7)
-        })
-
-        gsap.from(".transition1", {
-            scrollTrigger: {
-                trigger: '.transition1',
-                start: "top center"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .3
-        })
-        gsap.from(".transition2", {
-            scrollTrigger: {
-                trigger: '.transition2',
-                start: "top center"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .3
-        })
-        gsap.from(".transition3", {
-            scrollTrigger: {
-                trigger: '.transition3',
-                start: "top center"
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: .6
-        })
-    </script>
-    </section>
 </body>
 </html>
