@@ -110,7 +110,15 @@ section {
     color: $lightslategray;
     font-weight: bold;
     font-size: 1.5em;
-    margin-top: -.4em;
+    margin-top: -.2em;
+    display: block;
+}
+
+.language {
+    color: $lightslategray;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: -.2em;
     display: block;
 }
 

@@ -103,7 +103,15 @@ section {
   color: #6e8898;
   font-weight: bold;
   font-size: 1.5em;
-  margin-top: -0.4em;
+  margin-top: -0.2em;
+  display: block;
+}
+
+.language {
+  color: #6e8898;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: -0.2em;
   display: block;
 }
 
