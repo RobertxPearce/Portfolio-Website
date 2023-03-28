@@ -179,12 +179,6 @@ section {
   text-align: center;
   padding: 1em 1em 1em 1em;
 }
-
-@-webkit-keyframes shine {
-  100% {
-    left: 15%;
-  }
-}
 @keyframes shine {
   100% {
     left: 15%;
@@ -338,16 +332,6 @@ section {
 }
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    transform: translate(1px, 1px);
-    z-index: 5;
-  }
-  to {
-    transform: translate(1px, 49px);
-  }
 }
 
 @keyframes circleAnim {
