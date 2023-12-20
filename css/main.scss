@@ -173,6 +173,12 @@ section {
     text-align: center;
 }
 
+.portfolio-container a img {
+    border-radius: 1em;
+    margin-top: 0em;
+    margin-bottom: 3em;
+}
+
 .aboutme {
     background: $americansilver;
 }
@@ -185,7 +191,7 @@ section {
     font-size: large;
     font-weight: bolder;
     color: $saphire;
-    text-align: left;
+    text-align: center;
     padding: 1em 1em 1em 1em;
 }
 
