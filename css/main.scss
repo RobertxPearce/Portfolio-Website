@@ -191,13 +191,34 @@ section {
     padding: 1em 1em 1em 1em;
 }
 
-.files {
-    font-size: large;
-    font-weight: bolder;
-    color: $saphire;
-    text-align: center;
+.button-container {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
     padding: 1em 1em 1em 1em;
 }
+
+.resume-button, .cv-button {
+    padding: 20px 40px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: $saphire;
+    color: $americansilver;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.resume-button a, .cv-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume-button:hover, .cv-button:hover {
+    background-color: $lightslategray;
+}
+
 @-webkit-keyframes shine {
 	100% {
 		left: 15%;

@@ -179,12 +179,32 @@ section {
   padding: 1em 1em 1em 1em;
 }
 
-.files {
-  font-size: large;
-  font-weight: bolder;
-  color: #2e5266;
-  text-align: center;
+.button-container {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
   padding: 1em 1em 1em 1em;
+}
+
+.resume-button, .cv-button {
+  padding: 20px 40px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e5266;
+  color: #d3d0cb;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.resume-button a, .cv-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.resume-button:hover, .cv-button:hover {
+  background-color: #6e8898;
 }
 @keyframes shine {
   100% {
