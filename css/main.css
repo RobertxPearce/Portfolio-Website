@@ -161,21 +161,19 @@ section {
   text-align: center;
 }
 
-.portfolio-container a img {
-  border-radius: 1em;
-  margin-top: 0em;
-  margin-bottom: 3em;
-}
-
 .aboutme {
   background: #d3d0cb;
+}
+
+.headshot {
+  padding: 0em 1em 1em 1em;
 }
 
 .aboutmetxt {
   font-size: large;
   font-weight: bolder;
   color: #2e5266;
-  text-align: center;
+  text-align: left;
   padding: 1em 1em 1em 1em;
 }
 
