@@ -191,6 +191,13 @@ section {
     padding: 1em 1em 1em 1em;
 }
 
+.files {
+    font-size: large;
+    font-weight: bolder;
+    color: $saphire;
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+}
 @-webkit-keyframes shine {
 	100% {
 		left: 15%;
