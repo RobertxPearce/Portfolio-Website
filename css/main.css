@@ -180,11 +180,11 @@ section {
   font-weight: bolder;
   color: #2e5266;
   text-align: center;
-  padding: 1em 1em 1em 1em;
+  padding: 0em 1em 1em 1em;
 }
 
 .button-container {
-  background-color: #F7F7F7;
+  background-color: #d3d0cb;
   display: flex;
   justify-content: center;
   padding: 1em 1em 1em 1em;
