@@ -56,7 +56,7 @@ header ul {
 }
 header ul a {
   display: block;
-  padding: 0 1em;
+  padding: 0 0.6em;
 }
 
 .social-header, .hero-design {
@@ -177,11 +177,21 @@ section {
 }
 
 .aboutme {
+  padding-top: 3em;
   background: #d3d0cb;
+  display: grid;
+  align-items: center;
+  gap: 2em;
 }
 
 .headshot {
-  padding: 0em 1em 1em 1em;
+  max-width: 200px;
+}
+
+.aboutmetxt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .aboutmetxt {
@@ -232,6 +242,7 @@ section {
     left: 15%;
   }
 }
+
 @media only screen and (min-width: 800px) {
   body {
     overflow-x: hidden;
@@ -274,7 +285,8 @@ section {
     grid-template-columns: repeat(2, auto);
   }
   .headshot {
-    float: left;
+    display: flex;
+    justify-content: center;
     max-width: 500px;
   }
   .aboutmetxt {
