@@ -192,6 +192,14 @@ section {
   padding: 0em 1em 1em 1em;
 }
 
+.contactinfo {
+  font-size: large;
+  font-weight: bolder;
+  color: #2e5266;
+  text-align: center;
+  padding: 0em 1em 1em 1em;
+}
+
 .button-container {
   background-color: #d3d0cb;
   display: flex;
