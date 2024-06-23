@@ -1,5 +1,5 @@
 # Portfolio Website
-Welcome to my portfolio website, a digital showcase of my passion and expertise in coding.
+Welcome to my portfolio website repo.
 https://robertxpearce.com/
 # Built With
 * html
