@@ -17,6 +17,7 @@ body {
   height: 100vh;
   margin-block-start: 0;
   font-family: "Poppins";
+  padding-top: 70px;
 }
 
 ul {
@@ -44,7 +45,17 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1.4em 2em;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--saphire);
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .logo {
   color: #d3d0cb;
@@ -57,6 +68,93 @@ header ul {
 header ul a {
   display: block;
   padding: 0 0.6em;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  gap: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 15;
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hamburger .bar {
+  height: 4px;
+  width: 100%;
+  background-color: var(--americansilver);
+  transition: 1s;
+}
+
+/* Full-screen menu styling */
+.nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--saphire);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  gap: 20px;
+  z-index: 10;
+}
+/* Display full-screen menu when active */
+.nav-links.active {
+  display: flex;
+}
+/* Menu items stacked vertically */
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  list-style: none;
+}
+.nav-links ul li {
+  width: 100%;
+  text-align: center;
+}
+.nav-links ul li a {
+  color: var(--white);
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.social-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  padding-bottom: 20px;
+}
+.social-menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.social-menu ul li {
+  list-style: none;
+}
+.social-menu img {
+  width: 50px;
+  height: 50px;
 }
 
 .social-header, .hero-design {

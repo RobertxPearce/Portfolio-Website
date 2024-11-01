@@ -17,22 +17,33 @@
             <!-- Logo and Navigation Links -->
             <a href="../index.html" class="logo">Robert Pearce</a>
             <nav>
-                <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="contactme.html">Contact</a></li>
-                </ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="nav-links" id="nav-links">
+                    <nav>
+                        <ul>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <!-- <li><a href="tutoring.html">Tutoring</a></li> -->
+                            <li><a href="contactme.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Social Links at the bottom of the menu -->
+                    <div class="social-menu">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/robert-d-pearce/" target="blank"><img src="../images/linkedin-icon.svg" alt="Linkedin"></a></li>
+                            <li><a href="https://github.com/RobertxPearce" target="blank"><img src="../images/github-icon.svg" alt="GitHub"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC8tHiyp4m4q2o3FtZWK54tQ" target="blank"><img src="../images/youtube-icon.svg" alt="YouTube"></a></li>
+                            <li><a href="https://leetcode.com/robertxpearce/" target="blank"><img src="../images/leetcode-icon.webp" alt="Leetcode"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <!-- Social Links -->
-        <div class="social-header">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/robert-d-pearce/" target="blank" rel="noopener noreferrer"><img src="../images/linkedin-icon.svg" alt="Linkedin"></a></li>
-                <li><a href="https://github.com/RobertxPearce" target="blank" rel="noopener noreferrer"><img src="../images/github-icon.svg" alt="GitHub"></a></li>
-                <li><a href="https://www.youtube.com/channel/UC8tHiyp4m4q2o3FtZWK54tQ" target="blank" rel="noopener noreferrer"><img src="../images/youtube-icon.svg" alt="YouTube"></a></li>
-                <li><a href="https://leetcode.com/robertxpearce/" target="blank" rel="noopener noreferrer"><img src="../images/leetcode-icon.webp" alt="Leetcode"></a></li>
-            </ul>
-        </div>
     </div>
 
     <!-- Hero Section -->
@@ -251,6 +262,14 @@
             stagger: .6
         })
     </script>
+    
+    <!-- Script for menu -->
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+
     </section>
 </body>
 </html>
