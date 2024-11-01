@@ -92,6 +92,9 @@ header ul a {
   background-color: var(--americansilver);
   transition: 1s;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /* Full-screen menu styling */
 .nav-links {

@@ -263,10 +263,14 @@
         })
     </script>
     
-    <!-- Script for menu -->
+    <!-- Script to toggle menu and prevent body scrolling -->
     <script>
         document.getElementById("hamburger").addEventListener("click", function () {
-            document.getElementById("nav-links").classList.toggle("active");
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+
+            // Toggle the no-scroll class on the body
+            document.body.classList.toggle("no-scroll");
         });
     </script>
 
