@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
     <!-- Title and Stylesheet -->
     <title>Robert's Portfolio</title>
     <link rel="icon" type="image/png" href="../images/memoji-icon.png">
@@ -28,7 +27,7 @@
                     <nav>
                         <ul>
                             <li><a href="education.html">Credentials</a></li>
-                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="projects.html">Experience</a></li>
                             <li><a href="projects.html">Projects</a></li>
                             <li><a href="skills.html">Skills</a></li>
                             <li><a href="contactme.html">Contact</a></li>
@@ -52,7 +51,7 @@
     <div class="hero">
         <div class="content">
             <!-- Title -->
-            <h1 class="stagger1">Contact Me</h1>
+            <h1 class="stagger1">Education & Certifications</h1>
             <div class="meet stagger1">
                 <!-- Introduction -->
                 <p>Meet Robert Pearce</p>
@@ -83,33 +82,6 @@
         </svg>
     </div>
 
-    <!-- About me Section -->
-    <div class="aboutme">
-        <div class="headshot transition1">
-            <figure class="headshot">
-                <img src="../images/parking-lot-headshot.webp" alt="Headshot">
-            </figure>
-        </div>
-        <div class="aboutmetxt-container">
-            <div class="aboutmetxt">
-                <p>Hi, I'm Robert Pearce! I'm a Computer Science student with a background in business and a goal of becoming an Anesthesiologist Assistant. I’m applying my tech skills to healthcare, building clinical experience, and preparing to support patients with precision and care.</p>
-            </div>
-            <div class="contactinfo">
-                <p>(702) 334-3510</p>
-                <p>robertbdpearce@gmail.com</p>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- Buttons -->
-    <div class="transition1">
-        <div class="button-container">
-            <button class="resume-button"><a href="../files/resume_robert_pearce.pdf" target="_blank" title="Robert's Resume">Resume</a></button>
-            <!-- <button class="cv-button"><a href="../files/cv_robert_pearce.pdf" target="_blank" title="Robert's Curriculum Vitae">CV</a></button> -->
-            <button class="cv-button"><a href="https://github.com/RobertxPearce" target="_blank" title="Robert's GitHub">GitHub</a></button>
-        </div>
-    </div>
 
     <!-- Credentials Section -->
     <section class="portfolio">
@@ -205,7 +177,7 @@
     <!-- For Animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
     <script>
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
@@ -234,15 +206,35 @@
             ease: Back.easeOut.config(1.7)
         })
 
-        gsap.from(".aboutme", {
+        gsap.from(".transition1", {
             scrollTrigger: {
-                trigger: '.aboutme',
+                trigger: '.transition1',
                 start: "top center"
             },
             y: 50,
             opacity: 0,
             duration: 1.2,
             stagger: .3
+        })
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
         })
     </script>
     
@@ -257,5 +249,6 @@
         });
     </script>
 
+    </section>
 </body>
 </html>
